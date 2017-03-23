@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2017-03-23T18:39:38 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SecondPage" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7abc2584-b479-4da3-97e2-e5cb848a65ff">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="801" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<image>
+				<reportElement x="0" y="0" width="555" height="801" uuid="03148b37-0f3a-4acd-af2f-437f86bdc806">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["C:/Users/BNSPL-2/Google Drive/PROJECT DOCUMENTS/360FEEDBACK/report/images/Next Water Mark.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="5" width="60" height="30" uuid="54bdcbad-212e-426e-9db4-0dccac2d2e2e"/>
+				<imageExpression><![CDATA["http://assessment.thinktalentnext.in/resources/images/logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="495" y="5" width="60" height="30" uuid="479b7122-52c9-491b-bda7-d2bacffab571"/>
+				<imageExpression><![CDATA["http://assessment.thinktalentnext.in/resources/images/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="200" height="18" uuid="bf9ae8f8-fc4b-448d-9818-949c5d2a5339"/>
+				<text><![CDATA[Individual Assessment Report – ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="420" y="0" width="125" height="20" uuid="40ba1e87-2e93-4e85-b356-f92ff134a87e"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
