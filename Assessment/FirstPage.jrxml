@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
-<!-- 2017-03-23T18:37:04 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FirstPage" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" whenResourceMissingType="Error" uuid="3be74a58-0e76-4e77-93f1-4f1db3cd84c2">
+<!-- 2017-03-24T19:28:13 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FirstPage" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Error" uuid="3be74a58-0e76-4e77-93f1-4f1db3cd84c2">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -16,77 +16,63 @@
 		<![CDATA[]]>
 	</queryString>
 	<background>
-		<band height="801">
-			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
-			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-			<image>
-				<reportElement x="0" y="0" width="555" height="801" uuid="8a93f456-7684-41a6-9040-004708f730c5">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<imageExpression><![CDATA["C:/Users/BNSPL-2/Google Drive/PROJECT DOCUMENTS/360FEEDBACK/report/images/Next Water Mark.png"]]></imageExpression>
+		<band height="841">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+			<image scaleImage="RealSize" hAlign="Center" vAlign="Bottom">
+				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="595" height="841" uuid="8db87be3-31d2-48a1-945a-46415f830d12"/>
+				<imageExpression><![CDATA["C:/Users/BNSPL-2/Google Drive/PROJECT DOCUMENTS/360FEEDBACK/report/images/mailreport.png"]]></imageExpression>
 			</image>
 		</band>
 	</background>
-	<pageHeader>
-		<band height="35" splitType="Stretch">
-			<image>
-				<reportElement x="495" y="5" width="60" height="30" uuid="8ceaed3e-35a5-40bf-85d9-8e754c1cc5a5"/>
-				<imageExpression><![CDATA["http://assessment.thinktalentnext.in/resources/images/logo.png"]]></imageExpression>
-			</image>
-			<image>
-				<reportElement x="0" y="2" width="60" height="30" uuid="a9d8077a-b754-417a-abe0-309c872c3085"/>
-				<imageExpression><![CDATA["http://assessment.thinktalentnext.in/resources/images/logo.png"]]></imageExpression>
-			</image>
-		</band>
-	</pageHeader>
 	<detail>
-		<band height="765" splitType="Stretch">
+		<band height="841" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle">
+				<reportElement positionType="Float" x="0" y="-10" width="595" height="851" backcolor="rgba(107, 107, 107, 0.22745098)" uuid="2f3c531a-ce4a-4797-a658-f4dd925400d5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["C:/Users/BNSPL-2/Google Drive/PROJECT DOCUMENTS/ABILITYTEST/ASSESS_V4/Report/Report2copy.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="460" y="30" width="124" height="60" uuid="37a0a2df-3f07-4102-8dd9-438ee0dd0ab1"/>
+				<imageExpression><![CDATA["C:/Users/BNSPL-2/Google Drive/PROJECT DOCUMENTS/ABILITYTEST/ASSESS_V4/Report/logo.png"]]></imageExpression>
+			</image>
 			<staticText>
-				<reportElement x="0" y="10" width="555" height="30" uuid="c6f63581-60ea-4f7b-af9a-083e6ecef1aa"/>
-				<textElement textAlignment="Center">
-					<font fontName="Calibri" size="20" isBold="true"/>
+				<reportElement mode="Opaque" x="0" y="380" width="595" height="60" forecolor="#FFFFFF" backcolor="rgba(87, 87, 87, 0.8392157)" uuid="76c17f7d-b529-43f8-83d7-229f902ae793"/>
+				<box leftPadding="5" rightPadding="2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Calibri" size="30" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Individual Assessment Report]]></text>
+				<text><![CDATA[INDIVIDUAL ASSESSMENT REPORT]]></text>
 			</staticText>
 			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle">
-				<reportElement stretchType="RelativeToBandHeight" x="0" y="50" width="555" height="410" uuid="2f456334-ec77-4e3b-9001-9043d19e7850">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<imageExpression><![CDATA["https://thumbs.dreamstime.com/z/assessment-concept-words-written-marker-transparent-board-isolated-white-background-44592058.jpg"]]></imageExpression>
+				<reportElement x="10" y="20" width="130" height="80" uuid="9fea0bcb-f4c6-46a1-9ebd-91b1bf432500"/>
+				<imageExpression><![CDATA["https://upload.wikimedia.org/wikipedia/commons/f/fc/Logo_Allianz.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="280" y="570" width="106" height="16" uuid="2e20a18e-7805-4489-b7b4-3b540d87052d"/>
-				<textElement>
-					<font fontName="Calibri"/>
+				<reportElement x="0" y="624" width="595" height="19" uuid="0df7e612-44ec-4a14-ab47-86fac531f61f"/>
+				<box rightPadding="34"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri" size="14"/>
 				</textElement>
-				<text><![CDATA[Participant’s Name:]]></text>
+				<text><![CDATA[Sample Person]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="590" width="90" height="20" uuid="8bdfd6f3-b60f-488e-8218-addf9afc737c"/>
-				<textElement>
-					<font fontName="Calibri"/>
+				<reportElement x="0" y="655" width="595" height="20" uuid="d1cdd957-44c0-4ced-a654-eb6fd45bcf62"/>
+				<box rightPadding="34"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri" size="14"/>
 				</textElement>
-				<text><![CDATA[E-mail ID:]]></text>
+				<text><![CDATA[sample@allianz.com]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="280" y="610" width="100" height="20" uuid="d3a66531-c681-4343-af01-f631d42fe593"/>
-				<textElement>
-					<font fontName="Calibri"/>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="685" width="595" height="19" uuid="8716c588-4327-4307-9c3a-88364ba034f1"/>
+				<box rightPadding="34"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri" size="14"/>
 				</textElement>
-				<text><![CDATA[Date of Assessment:]]></text>
-			</staticText>
-		</band>
-	</detail>
-	<pageFooter>
-		<band height="25" splitType="Stretch">
-			<staticText>
-				<reportElement x="0" y="1" width="200" height="18" uuid="8825faac-31d6-4a77-8edc-55d35a854fcb"/>
-				<text><![CDATA[Individual Assessment Report – ]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="420" y="0" width="125" height="20" uuid="a652403b-fdf2-448f-abe9-bcdf8ebc79e1"/>
-				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 		</band>
-	</pageFooter>
+	</detail>
 </jasperReport>
