@@ -52,7 +52,7 @@ public class JasperTableExample {
 			 * Using compiled version(.jasper) of Jasper report to generate PDF
 			 */
 			final JasperPrint jasperPrint = JasperFillManager.fillReport(
-					"resources/com/javaquery/jasper/templates/template_Table.jasper", parameters,
+					JasperTableExample.class.getClassLoader().getResourceAsStream("template_Table.jasper"), parameters,
 					new JREmptyDataSource());
 
 			/* outputStream to create PDF */
