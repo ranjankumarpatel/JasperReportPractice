@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
-<!-- 2017-03-24T15:59:54 -->
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-03-26T18:29:42 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SecondPage" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7abc2584-b479-4da3-97e2-e5cb848a65ff">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<subDataset name="Dataset1" uuid="ab72bea5-0e0b-423e-a622-3abf2c218a0c">
@@ -12,13 +12,13 @@
 		<![CDATA[]]>
 	</queryString>
 	<background>
-		<band height="802" splitType="Stretch">
+		<band height="842" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-			<image>
-				<reportElement x="0" y="0" width="595" height="802" uuid="03148b37-0f3a-4acd-af2f-437f86bdc806">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="595" height="842" uuid="03148b37-0f3a-4acd-af2f-437f86bdc806">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
-				<imageExpression><![CDATA["C:/Users/BNSPL-2/Google Drive/PROJECT DOCUMENTS/360FEEDBACK/report/images/Next Water Mark.png"]]></imageExpression>
+				<imageExpression><![CDATA["/images/Next Water Mark.png"]]></imageExpression>
 			</image>
 		</band>
 	</background>
@@ -27,7 +27,7 @@
 			<staticText>
 				<reportElement x="0" y="12" width="595" height="20" uuid="13fbdcab-f561-40b7-b431-debbba525740"/>
 				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
-				<textElement>
+				<textElement textAlignment="Left">
 					<font fontName="Calibri" size="12"/>
 				</textElement>
 				<text><![CDATA[INTRODUCTION:]]></text>
@@ -35,7 +35,7 @@
 			<staticText>
 				<reportElement x="0" y="36" width="595" height="16" uuid="c6f4a378-e04b-408a-8e2b-203f3bed132b"/>
 				<box leftPadding="10" rightPadding="10"/>
-				<textElement>
+				<textElement textAlignment="Left">
 					<font fontName="Calibri" size="12"/>
 				</textElement>
 				<text><![CDATA[The contents of the Report are based on the participant’s performance on tests completed on Think Talent NEXT Digital Platform.]]></text>
@@ -43,33 +43,49 @@
 			<staticText>
 				<reportElement x="0" y="55" width="595" height="20" uuid="f50b4fc9-f2e9-4e2d-a13b-a98a3d23e7ab"/>
 				<box leftPadding="10" rightPadding="10"/>
-				<textElement>
+				<textElement textAlignment="Left">
 					<font fontName="Calibri" size="12"/>
 				</textElement>
 				<text><![CDATA[The Participant was nominated to complete the following test(s):]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="620" width="595" height="20" uuid="9f431ad1-3937-4cd2-a2b7-c4917686fbb1"/>
+				<reportElement x="0" y="660" width="595" height="20" uuid="9f431ad1-3937-4cd2-a2b7-c4917686fbb1"/>
 				<box leftPadding="10" rightPadding="10"/>
-				<textElement>
+				<textElement textAlignment="Left">
 					<font fontName="Calibri" size="12"/>
 				</textElement>
 				<text><![CDATA[The Report has been designed to support the following organizational processes:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="20" y="640" width="443" height="14" uuid="37a2e823-d192-4a62-bf92-ec3342007292"/>
+				<reportElement x="20" y="680" width="443" height="14" uuid="37a2e823-d192-4a62-bf92-ec3342007292"/>
+				<box leftPadding="10" rightPadding="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Calibri"/>
+				</textElement>
 				<text><![CDATA[a. Screening and shortlisting candidates as part of the Recruitment process]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="20" y="656" width="500" height="20" uuid="9ba1f687-9eea-41d8-8d79-5a7528544940"/>
+				<reportElement x="20" y="696" width="500" height="20" uuid="9ba1f687-9eea-41d8-8d79-5a7528544940"/>
+				<box leftPadding="10" rightPadding="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Calibri"/>
+				</textElement>
 				<text><![CDATA[b. Helping existing employees create better development plans by understanding their current strengths and development areas]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="700" width="595" height="20" uuid="40cf5206-5e42-4ef3-be25-6486d17da035"/>
+				<reportElement x="0" y="740" width="595" height="20" uuid="40cf5206-5e42-4ef3-be25-6486d17da035"/>
+				<box leftPadding="10" rightPadding="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Calibri"/>
+				</textElement>
 				<text><![CDATA[This report has a shelf-life of 18-24 months and should be treated confidentially.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="136" y="802" width="100" height="30" uuid="aa8d7f34-7325-4ccb-a0f1-b32a062092d8"/>
+				<reportElement x="0" y="760" width="595" height="30" uuid="aa8d7f34-7325-4ccb-a0f1-b32a062092d8"/>
+				<box leftPadding="10" rightPadding="10"/>
+				<textElement textAlignment="Left">
+					<font fontName="Calibri"/>
+				</textElement>
 				<text><![CDATA[If you require support in interpreting this Report or understanding any other aspect of this Report, please write to us at support@thinktalentnext.com or call us at +91-9899686363.]]></text>
 			</staticText>
 		</band>

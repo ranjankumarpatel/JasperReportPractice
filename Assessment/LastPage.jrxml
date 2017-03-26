@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-03-26T20:49:23 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LastPage" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="847b0da9-866c-449e-bc73-1ec82352804f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="713" splitType="Stretch">
+			<frame>
+				<reportElement x="10" y="312" width="260" height="401" uuid="7052cd38-b072-4f3c-ada5-d8d75b812e23"/>
+				<image scaleImage="FillFrame">
+					<reportElement x="0" y="0" width="130" height="60" uuid="908d5c4d-f378-42ea-bcc9-00dbc33dac4b"/>
+					<imageExpression><![CDATA["images/logo.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="0" y="80" width="260" height="20" uuid="a5595542-d039-4e1c-b45b-e69ebcd56b33"/>
+					<textElement>
+						<font fontName="Calibri" size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Think Talent Next]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="130" width="260" height="155" uuid="627721d0-751f-4f86-bee0-11e8f3491afa"/>
+					<textElement>
+						<font fontName="Calibri" size="12"/>
+					</textElement>
+					<text><![CDATA[Think Talent Services Private Limited
+
+501, 5th Floor, Tower -A,
+
+Spaze I-Tech Park, Sector-49
+
+Sohna Road, Gurgaon – 122018
+
+Website: www.thinktalentnext.com]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="307" width="260" height="94" uuid="7d577448-eb73-411c-bb47-74195932e4f8"/>
+					<textElement>
+						<font fontName="Calibri" size="12"/>
+					</textElement>
+					<text><![CDATA[Website: www.thinktalentnext.com
+
+E mail: support@thinktalentnext.com
+
+Phone Number: +91-9899686363]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

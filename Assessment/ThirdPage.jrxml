@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-03-26T23:21:28 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ThirdPage" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="60722e7b-0b6e-4825-abc9-a75a766c1cbf">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="BeanCollection"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="TestSubjectDataset" uuid="39bafd8b-f8f2-46bc-be9d-4d9e1247cc66">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<queryString>
+			<![CDATA[SELECT "POSITIONS"."POSITIONNO",
+	"POSITIONS"."DOCUMENTID",
+	"POSITIONS"."PRODUCTID",
+	"POSITIONS"."QUANTITY",
+	"POSITIONS"."PRICE"
+FROM "POSITIONS"]]>
+		</queryString>
+		<field name="POSITIONNO" class="java.lang.Integer"/>
+		<field name="DOCUMENTID" class="java.lang.Integer"/>
+		<field name="PRODUCTID" class="java.lang.Integer"/>
+		<field name="QUANTITY" class="java.lang.Integer"/>
+		<field name="PRICE" class="java.math.BigDecimal"/>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="841" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="595" height="840" uuid="ac618a5e-4faa-4d9c-9f8e-22184458d633">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["/images/Next Water Mark.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<detail>
+		<band height="787" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="320" width="595" height="39" uuid="ba110890-ad7f-4e70-b192-995666f73025"/>
+				<box leftPadding="5" rightPadding="5"/>
+				<rectangle radius="3">
+					<reportElement x="6" y="10" width="20" height="20" backcolor="#5B1F51" uuid="34f0eabc-6845-4cbe-9b13-f46523c999b2"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="29" y="10" width="20" height="20" backcolor="#5B1F51" uuid="678b476a-08c6-434e-a718-ece40ab7572e"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="52" y="10" width="20" height="20" backcolor="#5B1F51" uuid="607171ed-f2f0-43ee-a280-f132735ed123"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="75" y="10" width="20" height="20" backcolor="#5B1F51" uuid="c0c581f7-84fe-458c-8a2d-3044bbf1858d"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="144" y="10" width="20" height="20" backcolor="#5B1F51" uuid="215424e7-29fe-4c3e-a6d2-9c6d8fbc2dfd"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="167" y="10" width="20" height="20" backcolor="#5B1F51" uuid="c3382a03-a107-43f5-9ec9-8aeff574929e"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="98" y="10" width="20" height="20" backcolor="#5B1F51" uuid="365b7f39-faa9-4c45-b982-a68a2d724869"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="121" y="10" width="20" height="20" backcolor="#5B1F51" uuid="48616d43-6559-42d0-b3fc-64c840d3f1e6"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="236" y="10" width="20" height="20" backcolor="#5B1F51" uuid="eb005820-8fd4-4933-a132-2c9650fc6f8a"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="282" y="10" width="20" height="20" backcolor="#5B1F51" uuid="8ddc0f3d-feff-43d4-8042-cbb9e1a486f4"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="213" y="10" width="20" height="20" backcolor="#5B1F51" uuid="6a5eedac-bb35-4796-9348-709467d1c5c8"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="351" y="10" width="20" height="20" backcolor="#5B1F51" uuid="6f32645e-ede1-483e-9fbd-38eced32bb2f"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="328" y="10" width="20" height="20" backcolor="#5B1F51" uuid="ffc00d16-e596-4c99-a205-75915d66ff58"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="259" y="10" width="20" height="20" backcolor="#5B1F51" uuid="72f16821-772f-4e3d-b93a-3f7cd6e11c5e"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="190" y="10" width="20" height="20" backcolor="#5B1F51" uuid="7b886d29-4a31-41ff-a1f6-714950f328b3"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="305" y="10" width="20" height="20" backcolor="#5B1F51" uuid="e4900809-c06b-49e9-9cc9-a9c54b24decb"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="397" y="10" width="20" height="20" backcolor="#5B1F51" uuid="670c9656-6b86-4d63-9ce3-375599105509"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="374" y="10" width="20" height="20" backcolor="#5B1F51" uuid="4dc2520b-b3bc-496a-b43e-1845e379070c"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="443" y="10" width="20" height="20" backcolor="#5B1F51" uuid="710b9011-03d5-43b1-b07c-9337a727b41e"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="420" y="10" width="20" height="20" backcolor="#5B1F51" uuid="4b207629-1d4c-4845-bf24-3b226f997bf2"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="489" y="10" width="20" height="20" backcolor="#5B1F51" uuid="6feb4744-115a-432d-9473-e53ea7da6229"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="466" y="10" width="20" height="20" backcolor="#5B1F51" uuid="17dea315-5770-4391-bf22-fbcb51956122"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="535" y="10" width="20" height="20" backcolor="#5B1F51" uuid="041587b9-c960-444f-94c4-4e69643cf1ee"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="512" y="10" width="20" height="20" backcolor="#5B1F51" uuid="88e30eec-6aff-46fc-97c4-577588276d62"/>
+				</rectangle>
+				<rectangle radius="3">
+					<reportElement x="558" y="10" width="20" height="20" backcolor="#5B1F51" uuid="2044c221-6686-4108-b82b-d13ec8c1b44a"/>
+				</rectangle>
+			</frame>
+			<frame>
+				<reportElement x="0" y="359" width="595" height="20" uuid="a07c6bed-5b68-4dc5-bf3b-757936a9e974"/>
+				<box leftPadding="5" rightPadding="5"/>
+				<staticText>
+					<reportElement x="0" y="0" width="15" height="20" uuid="d169e784-8c21-4e91-9dee-2247818f42b5"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[0]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="558" y="0" width="25" height="20" uuid="0c79e973-07ae-416e-aaac-37ff23c2d59b"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[100]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="292" y="0" width="15" height="20" uuid="8b1b4f12-a09a-4642-85d8-f9ede0ac17c8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[50]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="57" y="0" width="15" height="20" uuid="2a1382eb-5f93-4954-9f7d-dfa9988284cd"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[10]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="120" y="0" width="15" height="20" uuid="586299a5-48f4-4004-928b-7ff743b28f11"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[20]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="456" y="0" width="15" height="20" uuid="768ed19c-8dbd-49cd-a0d3-c2607de4ac0d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[80]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="180" y="0" width="15" height="20" uuid="581b8bfa-ff4c-4d8d-9dbe-b52479c3e95a"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[30]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="241" y="0" width="15" height="20" uuid="bd0d1f2e-0a5a-45e0-a7a4-bf5e567e0d75"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[40]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="350" y="0" width="15" height="20" uuid="e0282d8e-b055-48c2-a5b1-792d236224ab"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[60]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="399" y="0" width="15" height="20" uuid="ca4807c1-7631-4746-bbf9-b723fb9e894f"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[70]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="510" y="0" width="15" height="20" uuid="7b7971e6-5d26-4334-abb8-2beed3e5e956"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[90]]></text>
+				</staticText>
+			</frame>
+			<componentElement>
+				<reportElement x="0" y="149" width="595" height="90" uuid="2307e088-d49e-47cd-aed6-42e90e61d587">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="TestSubjectDataset" uuid="ff252354-5c7e-4d11-b0be-df01cc687e8c"/>
+					<jr:listContents height="90" width="595">
+						<textField>
+							<reportElement x="0" y="0" width="595" height="90" uuid="2cc2f2d8-f242-4aa4-84d0-fb3c9c9337d2"/>
+							<textFieldExpression><![CDATA[$F{PRICE}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
