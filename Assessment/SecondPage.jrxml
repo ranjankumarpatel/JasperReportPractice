@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-03-26T18:29:42 -->
+<!-- 2017-03-29T02:16:13 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SecondPage" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7abc2584-b479-4da3-97e2-e5cb848a65ff">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
-	<subDataset name="Dataset1" uuid="ab72bea5-0e0b-423e-a622-3abf2c218a0c">
+	<subDataset name="testEligibilitiesDataSet" uuid="137ce07b-f633-4ee0-9fe0-7a8a60759913">
 		<queryString>
 			<![CDATA[]]>
 		</queryString>
+		<field name="questionCount" class="java.lang.Integer">
+			<fieldDescription><![CDATA[questionCount]]></fieldDescription>
+		</field>
+		<field name="recoveryStatus" class="java.lang.String">
+			<fieldDescription><![CDATA[recoveryStatus]]></fieldDescription>
+		</field>
+		<field name="recoveryCount" class="java.lang.Integer">
+			<fieldDescription><![CDATA[recoveryCount]]></fieldDescription>
+		</field>
+		<field name="testCompletionDate" class="java.util.Date">
+			<fieldDescription><![CDATA[testCompletionDate]]></fieldDescription>
+		</field>
+		<field name="examStatus" class="java.lang.String">
+			<fieldDescription><![CDATA[examStatus]]></fieldDescription>
+		</field>
+		<field name="testAttendCount" class="java.lang.Integer">
+			<fieldDescription><![CDATA[testAttendCount]]></fieldDescription>
+		</field>
+		<field name="testDescription" class="java.lang.String">
+			<fieldDescription><![CDATA[testDescription]]></fieldDescription>
+		</field>
+		<field name="testDuration" class="java.lang.Integer">
+			<fieldDescription><![CDATA[testDuration]]></fieldDescription>
+		</field>
+		<field name="testElgId" class="java.lang.Long">
+			<fieldDescription><![CDATA[testElgId]]></fieldDescription>
+		</field>
+		<field name="testName" class="java.lang.String">
+			<fieldDescription><![CDATA[testName]]></fieldDescription>
+		</field>
 	</subDataset>
+	<parameter name="testEligibilities" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="REPORT_DIR" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+		<defaultValueExpression><![CDATA["/home/ranjan/workspace1/Rest-Assessment/src/main/resources/report/images"]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -18,7 +55,7 @@
 				<reportElement x="0" y="0" width="595" height="842" uuid="03148b37-0f3a-4acd-af2f-437f86bdc806">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
-				<imageExpression><![CDATA["/images/Next Water Mark.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{REPORT_DIR}+"/Next Water Mark.png"]]></imageExpression>
 			</image>
 		</band>
 	</background>
@@ -28,7 +65,7 @@
 				<reportElement x="0" y="12" width="595" height="20" uuid="13fbdcab-f561-40b7-b431-debbba525740"/>
 				<box topPadding="0" leftPadding="10" bottomPadding="0" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri" size="12"/>
+					<font fontName="Lucida Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[INTRODUCTION:]]></text>
 			</staticText>
@@ -36,7 +73,7 @@
 				<reportElement x="0" y="36" width="595" height="16" uuid="c6f4a378-e04b-408a-8e2b-203f3bed132b"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri" size="12"/>
+					<font fontName="Lucida Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[The contents of the Report are based on the participant’s performance on tests completed on Think Talent NEXT Digital Platform.]]></text>
 			</staticText>
@@ -44,7 +81,7 @@
 				<reportElement x="0" y="55" width="595" height="20" uuid="f50b4fc9-f2e9-4e2d-a13b-a98a3d23e7ab"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri" size="12"/>
+					<font fontName="Lucida Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[The Participant was nominated to complete the following test(s):]]></text>
 			</staticText>
@@ -52,7 +89,7 @@
 				<reportElement x="0" y="660" width="595" height="20" uuid="9f431ad1-3937-4cd2-a2b7-c4917686fbb1"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri" size="12"/>
+					<font fontName="Lucida Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[The Report has been designed to support the following organizational processes:]]></text>
 			</staticText>
@@ -60,7 +97,7 @@
 				<reportElement x="20" y="680" width="443" height="14" uuid="37a2e823-d192-4a62-bf92-ec3342007292"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri"/>
+					<font fontName="Lucida Sans"/>
 				</textElement>
 				<text><![CDATA[a. Screening and shortlisting candidates as part of the Recruitment process]]></text>
 			</staticText>
@@ -68,7 +105,7 @@
 				<reportElement x="20" y="696" width="500" height="20" uuid="9ba1f687-9eea-41d8-8d79-5a7528544940"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri"/>
+					<font fontName="Lucida Sans"/>
 				</textElement>
 				<text><![CDATA[b. Helping existing employees create better development plans by understanding their current strengths and development areas]]></text>
 			</staticText>
@@ -76,7 +113,7 @@
 				<reportElement x="0" y="740" width="595" height="20" uuid="40cf5206-5e42-4ef3-be25-6486d17da035"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri"/>
+					<font fontName="Lucida Sans"/>
 				</textElement>
 				<text><![CDATA[This report has a shelf-life of 18-24 months and should be treated confidentially.]]></text>
 			</staticText>
@@ -84,10 +121,58 @@
 				<reportElement x="0" y="760" width="595" height="30" uuid="aa8d7f34-7325-4ccb-a0f1-b32a062092d8"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement textAlignment="Left">
-					<font fontName="Calibri"/>
+					<font fontName="Lucida Sans"/>
 				</textElement>
 				<text><![CDATA[If you require support in interpreting this Report or understanding any other aspect of this Report, please write to us at support@thinktalentnext.com or call us at +91-9899686363.]]></text>
 			</staticText>
+			<componentElement>
+				<reportElement x="0" y="80" width="595" height="100" uuid="efd470e4-121e-4642-98af-799de6b84c27"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="testEligibilitiesDataSet" uuid="c76d4267-dcee-4a34-bf95-a26b8d9c7d6a">
+						<dataSourceExpression><![CDATA[$P{testEligibilities}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="100" width="595">
+						<textField>
+							<reportElement x="0" y="0" width="595" height="20" uuid="f36e29d8-1f17-425a-8e47-0337626ac096"/>
+							<box leftPadding="10"/>
+							<textElement verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{testName}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="20" width="595" height="40" uuid="22b60814-ae36-45af-9a49-47f234cfe148"/>
+							<box leftPadding="10"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Lucida Sans"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{testDescription}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="10" y="60" width="90" height="20" uuid="1ca7c164-cf00-4024-a5f8-b9a674b2d1a5"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Lucida Sans"/>
+							</textElement>
+							<text><![CDATA[Total Questions:]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="140" y="60" width="260" height="20" uuid="d52ebf7c-ddd8-4cfd-ab30-628388c29e51"/>
+							<textElement verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{questionCount}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="140" y="80" width="260" height="20" uuid="b10269a9-8f7c-48c1-afe4-25baa01f7b85"/>
+							<textElement verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$F{testDuration}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="10" y="80" width="90" height="20" uuid="88732525-919a-4827-af4a-f7599631210d"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Lucida Sans"/>
+							</textElement>
+							<text><![CDATA[Total Questions:]]></text>
+						</staticText>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
 		</band>
 	</detail>
 </jasperReport>
